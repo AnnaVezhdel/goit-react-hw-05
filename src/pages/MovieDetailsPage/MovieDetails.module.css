@@ -1,0 +1,61 @@
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: rgb(16, 16, 16);
+}
+.movieWrapper {
+  padding: 50px;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  & img {
+    border-radius: 10px;
+  }
+}
+.movieDetails {
+  font-size: 18px;
+  & h2 {
+    font-size: 40px;
+    color: orange;
+    text-align: center;
+  }
+  & h3 {
+    color: orange;
+  }
+  & span {
+    color: blueviolet;
+  }
+}
+.backLink {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: orange;
+  }
+}
+.nav {
+  display: flex;
+  text-align: right;
+  gap: 30px;
+}
+.links {
+  display: flex;
+  text-align: right;
+  gap: 10px;
+}
+.link {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: orange;
+  }
+}
+.activeLink {
+  color: orange;
+}

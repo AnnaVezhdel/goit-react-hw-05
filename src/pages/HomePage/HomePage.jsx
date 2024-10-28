@@ -1,11 +1,16 @@
 import MoviesList from "../../components/MoviesList/MoviesList";
 import { useHttp } from "../../hooks/useHttp";
-import { fetchFilms } from "../../services/api";
+import { fetchMovies } from "../../services/api";
 
 const HomePage = () => {
-  const [movies] = useHttp(fetchFilms);
+  const [movies] = useHttp(fetchMovies);
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <h2>Trending today</h2>
       <MoviesList movies={movies} />
     </div>

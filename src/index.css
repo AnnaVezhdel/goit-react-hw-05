@@ -16,6 +16,11 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+h2 {
+  color: orange;
+  text-align: center;
+  padding-bottom: 30px;
+}
 
 button {
   border-radius: 8px;

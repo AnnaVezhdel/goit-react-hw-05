@@ -1,0 +1,31 @@
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  & li {
+    background-color: rgb(16, 16, 16);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px 2px orange;
+    & a {
+      color: white;
+      font-weight: 500;
+      font-size: 20px;
+      text-decoration: none;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
