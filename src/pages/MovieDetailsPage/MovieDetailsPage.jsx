@@ -8,7 +8,7 @@ import {
 import clsx from "clsx";
 import { useHttp } from "../../hooks/useHttp";
 import { fetchMovieDetails } from "../../services/api";
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 
 import s from "./MovieDetails.module.css";
 
@@ -39,6 +39,7 @@ const MovieDetailsPage = () => {
             <h2>
               {movie.title} ({movie.release_date.slice(0, 4)})
             </h2>
+            <span>{movie.tagline}</span>
             <p>
               Vote average: <span>{movie.vote_average}</span>
             </p>
@@ -61,7 +62,9 @@ const MovieDetailsPage = () => {
             </div>
           </div>
         </div>
-        <Outlet />
+        <Suspense fallback={<h2>Loading...</h2>}>
+          <Outlet />
+        </Suspense>
       </div>
     </div>
   );

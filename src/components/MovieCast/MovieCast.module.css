@@ -9,7 +9,7 @@
   & li {
     text-align: center;
     font-weight: 500;
-    width: calc((100% - 6 * 10px) / 7);
+    width: 150px;
   }
   & img {
     border-radius: 4px;

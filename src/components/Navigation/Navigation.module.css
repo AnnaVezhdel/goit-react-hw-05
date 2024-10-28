@@ -1,4 +1,7 @@
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: flex-start;
   margin: 0 auto;
@@ -12,7 +15,7 @@
   font-size: 24px;
   font-weight: 500;
   &:hover {
-    color: red;
+    color: orange;
     /* text-decoration: underline; */
   }
 }

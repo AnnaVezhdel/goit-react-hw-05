@@ -30,7 +30,7 @@ const MovieCast = () => {
               alt={actor.name}
             />
             <p className={s.name}>{actor.name}</p>
-            <p>As: {actor.character}</p>
+            <p>Role: {actor.character}</p>
           </li>
         ))}
       </ul>
